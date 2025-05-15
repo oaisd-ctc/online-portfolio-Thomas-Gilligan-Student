@@ -1,17 +1,17 @@
 {
     "editor.quickSuggestions": {
-        "other": false,
-        "comments": false,
-        "strings": false
+        "other": true,
+        "comments": true,
+        "strings": true
     },
-    "editor.wordBasedSuggestions": false,
-    "editor.suggestOnTriggerCharacters": false,
-    "editor.parameterHints.enabled": false,
-    "editor.hover.enabled": false,
-    "editor.inlineSuggest.enabled": false,
-    "editor.suggest.snippetsPreventQuickSuggestions": false,
+    "editor.wordBasedSuggestions": "off",
+    "editor.suggestOnTriggerCharacters": true,
+    "editor.parameterHints.enabled": true,
+    "editor.hover.enabled": true,
+    "editor.inlineSuggest.enabled": true,
+    "editor.suggest.snippetsPreventQuickSuggestions": true,
     "emmet.includeLanguages": {},
     "emmet.showExpandedAbbreviation": "never",
-    "emmet.triggerExpansionOnTab": false,
-    "emmet.extensionsPath": null
+    "emmet.triggerExpansionOnTab": true,
+    "emmet.extensionsPath": []
 }

@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Fragment+Mono:ital@0;1&family=Jersey+15&display=swap');
+
+body {
+    margin: 0;
+    background-color: #f0ebe2;
+    font-family: "Fragment Mono", monospace;
+}
+
+.hide {
+    display: none !important;
+}
+
+header {
+    display: grid;
+    height: 60px;
+    width: 100%;
+    background-color: tan;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+nav * {
+    width: 150px;
+    font-size: 100%;
+    background-color: transparent;
+    border: none;
+}
+
+nav button:hover {
+    background-color: #ebc78662;
+    transition-duration: 300ms;
+}
+
+h3 {
+    margin: 0;
+    font-size: 32px;
+}
+
+#certifications-tab, #experience-tab {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-content: center;
+}
+
+.cert-card {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    padding: 16px;
+    width: 448px;
+}
+
+ul {
+    margin: 0;
+}
+
+.cert-card img {
+    width: 240px;
+    margin: auto;
+}
+
+.cert-card div {
+    margin: auto;
+}
+
+p {
+    margin: 5px;
+}
