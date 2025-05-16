@@ -15,6 +15,8 @@ header {
     height: 60px;
     width: 100%;
     background-color: tan;
+    position: sticky;
+    top: 0;
 }
 
 nav {
@@ -40,29 +42,36 @@ h3 {
 }
 
 #certifications-tab, #experience-tab {
+    justify-content: center;
+    display: flex;
     width: 100%;
+}
+
+#certifications-container, #experience-container {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 0;
     justify-content: center;
 }
 
-.cert-card {
+.item-card {
     display: grid;
     grid-template-columns: 1fr 2fr;
     padding: 16px;
     width: 448px;
+    max-width: 448px;
 }
 
 ul {
     margin: 0;
 }
 
-.cert-card img {
+.item-card img {
     width: 240px;
     margin: auto;
 }
 
-.cert-card div {
+.item-card div {
     margin: auto;
 }
 

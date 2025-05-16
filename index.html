@@ -1,114 +1,203 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <link rel="stylesheet" href="style.css">
-        <title>Thomas Gilligan Portfolio</title>
-    </head>
-    <body>
-        <script type="text/javascript" src="main.js" defer></script>
-        <header>
-            <nav>
-                <button onclick="swapTab('home')">Home</button>
-                <button onclick="swapTab('experience')">Experience</button>
-                <button onclick="swapTab('certifications')">Certifications</button>
-                <button onclick="swapTab('resume')">Resume</button>
-            </nav>
-        </header>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Thomas Gilligan Portfolio</title>
+</head>
+
+<body>
+    <script src="main.js" defer></script>
+    <header>
+        <nav>
+            <button onclick="swapTab('home')">Home</button>
+            <button onclick="swapTab('experience')">Experience</button>
+            <button onclick="swapTab('certifications')">Certifications</button>
+            <button onclick="swapTab('resume')">Resume</button>
+        </nav>
+    </header>
+    <main>
         <div id="home-tab" class="tab">
             <p>me fr</p>
         </div>
-        <div id="experience-tab" class="tab hide hide">
-            <p>exp!</p>
+        <div id="experience-tab" class="tab hide">
+            <div id="experience-container">
+                <div class="item-card">
+                    <img src="Images/Experience/ap.png">
+                    <div>
+                        <p><b>AP Computer Science Principles</b></p>
+                        <ul>
+                            <li>Apply CS to solve problems through algorithms and programs</li>
+                        </ul>
+                        <p><i></i></p>
+                    </div>
+                </div>
+                <div class="item-card">
+                    <img src="Images/Experience/linux.png">
+                    <div>
+                        <p><b>Linux Essentials</b></p>
+                        <ul>
+                            <li>Class through Michigan Virtual and Netacad</li>
+                            <li></li>
+                        </ul>
+                        <p><i></i></p>
+                    </div>
+                </div>
+                <div class="item-card">
+                    <img src="Images/Experience/javascript.png">
+                    <div>
+                        <p><b>Interactive Web Development</b></p>
+                        <ul>
+                            <li>Creating interactive websites using HTML, CSS, and JavaScript</li>
+                        </ul>
+                        <p><i></i></p>
+                    </div>
+                </div>
+                <div class="item-card">
+                    <img src="Images/Experience/csharp.png">
+                    <div>
+                        <p><b>C# Object-Oriented Programming</b></p>
+                        <ul>
+                            <li></li>
+                        </ul>
+                        <p><i></i></p>
+                    </div>
+                </div>
+                <div class="item-card">
+                    <img src="Images/Experience/unity.png">
+                    <div>
+                        <p><b>Unity Game Development & Design</b></p>
+                        <ul>
+                            <li>Create interactive games, apps, and experiences using Unity & C#</li>
+                        </ul>
+                        <p><i></i></p>
+                    </div>
+                </div>
+                <div class="item-card">
+                    <img src="Images/Experience/python.png">
+                    <div>
+                        <p><b>Other Programming Languages</b></p>
+                        <ul>
+                            <li>Intermediate Skills in Python</li>
+                            <li>Base-Level Skills in Java & GoLang</li>
+                        </ul>
+                        <p><i></i></p>
+                    </div>
+                </div>
+            </div>
         </div>
         <div id="certifications-tab" class="tab hide">
-            <div class="cert-card">
-                <img src="Certifications/html-and-css.png">
-                <div>
-                    <p><b>IT Specialist: HTML & CSS</b></p>
-                    <ul>
-                        <li>Structure a webpage using HTML</li>
-                        <li>Apply styles using CSS</li>
-                    </ul>
-                    <p><i>Issued 9/27/24</i></p>
+            <div id="certifications-container">
+                <div class="item-card">
+                    <a href="https://www.credly.com/badges/6ef8ef03-7f69-4e0d-a664-d11a7d8f80dd/public_url"
+                        target="_blank"><img src="Images/Certifications/html-and-css.png"
+                            alt="IT Specialist: HTML & CSS Certification Badge"></a>
+                    <div>
+                        <p><b>IT Specialist: HTML & CSS</b></p>
+                        <ul>
+                            <li>Structure a webpage using HTML</li>
+                            <li>Apply styles using CSS</li>
+                        </ul>
+                        <p><i>Issued 9/27/24</i></p>
+                    </div>
+                </div>
+                <div class="item-card">
+                    <a href="https://www.credly.com/badges/6901aeaa-e74b-4943-87f3-df9d7a4878ee/public_url"
+                        target="_blank"><img src="Images/Certifications/computational-thinking.png"
+                            alt="IT Specialist: Computational Thinking Certification Badge"></a>
+                    <div>
+                        <p><b>IT Specialist: Computational Thinking</b></p>
+                        <ul>
+                            <li>Decompose problems</li>
+                            <li>Collect, analyze, and represent data</li>
+                        </ul>
+                        <p><i>Issued 10/1/24</i></p>
+                    </div>
+                </div>
+                <div class="item-card">
+                    <a href="https://www.credly.com/badges/4adf232c-8cb7-4712-a989-2fdcc004bcf2/public_url"
+                        target="_blank"><img src="Images/Certifications/javascript.png"
+                            alt="IT Specialist: JavaScript Certification Badge"></a>
+                    <div>
+                        <p><b>IT Specialist: JavaScript</b></p>
+                        <ul>
+                            <li>Recognize, write, and debug JS code to logically solve a problem</li>
+                        </ul>
+                        <p><i>Issued 10/2/24</i></p>
+                    </div>
+                </div>
+                <div class="item-card">
+                    <a href="https://www.credly.com/badges/c1cafe79-95c9-464f-9a14-09c4f3e0ab59/public_url"
+                        target="_blank"><img src="Images/Certifications/python.png"
+                            alt="IT Specialist: Python Certification Badge"></a>
+                    <div>
+                        <p><b>IT Specialist: Python</b></p>
+                        <ul>
+                            <li>Recognize, write, and debug Python code to logically solve a problem</li>
+                        </ul>
+                        <p><i>Issued 10/10/24</i></p>
+                    </div>
+                </div>
+                <div class="item-card">
+                    <a href="https://www.credly.com/badges/c3f9a439-3069-4e51-a3fd-9d8bdb300122/public_url"
+                        target="_blank"><img src="Images/Certifications/java.png"
+                            alt="IT Specialist: Java Certification Badge"></a>
+                    <div>
+                        <p><b>IT Specialist: Java</b></p>
+                        <ul>
+                            <li>Recognize, write, and debug Java code to logically solve a problem</li>
+                        </ul>
+                        <p><i>Issued 2/5/25</i></p>
+                    </div>
+                </div>
+                <div class="item-card">
+                    <a href="https://www.credly.com/badges/c9071ef4-f83e-4b56-afcc-c0d8ede34885/public_url"
+                        target="_blank"><img src="Images/Certifications/it-fundamentals.png"
+                            alt="CompTIA IT Fundamentals (ITF+) Certification Badge"></a>
+                    <div>
+                        <p><b>CompTIA ITF+</b></p>
+                        <ul>
+                            <li>Install software</li>
+                            <li>Establish basic network connectivity</li>
+                            <li>Identify and prevent basic security risks</li>
+                        </ul>
+                        <p><i>Issued 4/8/25</i></p>
+                    </div>
+                </div>
+                <div class="item-card">
+                    <a href="https://www.credly.com/badges/4270776f-238a-4619-891a-dcb27cd164ac/public_url"
+                        target="_blank"><img src="Images/Certifications/unity-programmer.png"
+                            alt="Unity Certified User: Programmer Certification Badge"></a>
+                    <div>
+                        <p><b>Unity Certified User: Programmer</b></p>
+                        <ul>
+                            <li>Create interactive content for industries such as gaming, entertainment, automotive,
+                                etc.
+                            </li>
+                        </ul>
+                        <p><i>Issued 5/1/25</i></p>
+                    </div>
+                </div>
+                <div class="item-card">
+                    <a href="https://www.credly.com/badges/34de6506-22c6-4d74-aec5-d8b42608f56a/public_url"
+                        target="_blank"><img src="Images/Certifications/unity-artist.png"
+                            alt="Unity Certified User: Artist Certification Badge"></a>
+                    <div>
+                        <p><b>Unity Certified User: Artist</b></p>
+                        <ul>
+                            <li>Manage basic aspects of dealing with art assets</li>
+                            <li>Familiar with Unity art pipeline</li>
+                        </ul>
+                        <p><i>Issued 5/2/25</i></p>
+                    </div>
                 </div>
             </div>
-            <div class="cert-card">
-                <img src="Certifications/computational-thinking.png">
-                <div>
-                    <p><b>IT Specialist: Computational Thinking</b></p>
-                    <ul>
-                        <li>Decompose problems</li>
-                        <li>Collect, analyze, and represent data</li>
-                    </ul>
-                    <p><i>Issued 10/1/24</i></p>
-                </div>
-            </div>
-            <div class="cert-card">
-                <img src="Certifications/javascript.png">
-                <div>
-                    <p><b>IT Specialist: JavaScript</b></p>
-                    <ul>
-                        <li>Recognize, write, and debug JS code to logically solve a problem</li>
-                    </ul>
-                    <p><i>Issued 10/2/24</i></p>
-                </div>
-            </div>
-            <div class="cert-card">
-                <img src="Certifications/python.png">
-                <div>
-                    <p><b>IT Specialist: Python</b></p>
-                    <ul>
-                        <li>Recognize, write, and debug Python code to logically solve a problem</li>
-                    </ul>
-                    <p><i>Issued 10/10/24</i></p>
-                </div>
-            </div>
-            <div class="cert-card">
-                <img src="Certifications/java.png">
-                <div>
-                    <p><b>IT Specialist: Java</b></p>
-                    <ul>
-                        <li>Recognize, write, and debug Java code to logically solve a problem</li>
-                    </ul>
-                    <p><i>Issued 2/5/25</i></p>
-                </div>
-            </div>
-            <div class="cert-card">
-                <img src="Certifications/it-fundamentals.png">
-                <div>
-                    <p><b>CompTIA ITF+</b></p>
-                    <ul>
-                        <li>Install software</li>
-                        <li>Establish basic network connectivity</li>
-                        <li>Identify and prevent basic security risks</li>
-                    </ul>
-                    <p><i>Issued 4/8/25</i></p>
-                </div>
-            </div>
-            <div class="cert-card">
-                <img src="Certifications/unity-programmer.png">
-                <div>
-                    <p><b>Unity Certified User: Programmer</b></p>
-                    <ul>
-                        <li>Create interactive content for industries such as gaming, entertainment, automotive, AEC, and XR</li>
-                    </ul>
-                    <p><i>Issued 5/1/25</i></p>
-                </div>
-            </div>
-            <div class="cert-card">
-                <img src="Certifications/unity-artist.png">
-                <div>
-                    <p><b>Unity Certified User: Artist</b></p>
-                    <ul>
-                        <li>Manage basic aspects of dealing with art assets</li>
-                        <li>Familiar with Unity art pipeline</li>
-                    </ul>
-                    <p><i>Issued 5/2/25</i></p>
-                </div>
-            </div>            
         </div>
         <div id="resume-tab" class="tab hide">
             <p>resume!</p>
         </div>
-    </body>
+    </main>
+</body>
+
 </html>
