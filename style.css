@@ -41,7 +41,7 @@ h3 {
     font-size: 32px;
 }
 
-#certifications-tab, #experience-tab {
+.tab {
     justify-content: center;
     display: flex;
     width: 100%;
@@ -77,4 +77,23 @@ ul {
 
 p {
     margin: 5px;
+    text-overflow:ellipsis;
+}
+
+section {
+    border: 2px solid lightgray;
+}
+
+#about-card {
+    display: grid;
+    /* grid-template-columns: 3fr, 2fr 1fr; */
+    grid-template-rows: auto auto;
+    width: 100%;
+    margin: 16px;
+    padding: 16px;
+}
+
+h2 {
+    text-align: center;
+    width: 100%;
 }
