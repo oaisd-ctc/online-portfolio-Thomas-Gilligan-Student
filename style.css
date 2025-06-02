@@ -26,7 +26,7 @@ nav {
 }
 
 nav * {
-    width: 120px;
+    width: 150px;
     font-size: 100%;
     background-color: transparent;
     border: none;
@@ -77,8 +77,8 @@ ul {
 }
 
 .item-card img:hover {
-    scale: 1.01;
-    transition-duration: 500ms;
+    scale: 1.025;
+    transition-duration: 300ms;
 }
 
 .item-card div {
