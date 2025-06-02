@@ -97,3 +97,17 @@ h2 {
     text-align: center;
     width: 100%;
 }
+
+.tab {
+    opacity: 0;
+    transform: translateX(150px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    display: none;
+    position: relative;
+}
+
+.tab.active {
+    display: block;
+    opacity: 1;
+    transform: translateX(0);
+}
