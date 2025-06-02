@@ -17,6 +17,7 @@ header {
     background-color: tan;
     position: sticky;
     top: 0;
+    z-index: 6;
 }
 
 nav {
@@ -25,7 +26,7 @@ nav {
 }
 
 nav * {
-    width: 150px;
+    width: 120px;
     font-size: 100%;
     background-color: transparent;
     border: none;
@@ -57,9 +58,13 @@ h3 {
 .item-card {
     display: grid;
     grid-template-columns: 1fr 2fr;
-    padding: 16px;
+    margin: 12px;
+    padding: 12px;
     width: 448px;
     max-width: 448px;
+    background: white;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 16px;
 }
 
 ul {
@@ -71,13 +76,19 @@ ul {
     margin: auto;
 }
 
+.item-card img:hover {
+    scale: 1.01;
+    transition-duration: 500ms;
+}
+
 .item-card div {
     margin: auto;
 }
 
 p {
     margin: 5px;
-    text-overflow:ellipsis;
+    text-overflow: ellipsis;
+    text-wrap: wrap;
 }
 
 section {
@@ -87,8 +98,6 @@ section {
 #about-card {
     display: grid;
     /* grid-template-columns: 3fr, 2fr 1fr; */
-    grid-template-rows: auto auto;
-    width: 100%;
     margin: 16px;
     padding: 16px;
 }
@@ -100,7 +109,7 @@ h2 {
 
 .tab {
     opacity: 0;
-    transform: translateX(150px);
+    transform: translateX(10px);
     transition: opacity 0.5s ease, transform 0.5s ease;
     display: none;
     position: relative;
