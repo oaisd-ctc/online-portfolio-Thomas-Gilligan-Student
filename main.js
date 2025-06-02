@@ -19,7 +19,7 @@ function swapTab(tabName) {
             activeTab.style.display = "none";
             activeTab.classList.remove("active");
 
-            targetTab.style.display = "block";
+            targetTab.style.display = "flex";
             targetTab.style.opacity = "0";
             targetTab.style.transform = `translateX(${slideInX}px)`;
 
