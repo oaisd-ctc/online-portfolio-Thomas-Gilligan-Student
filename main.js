@@ -1,5 +1,5 @@
 function swapTab(tabName) {
-    const tabs = Array.from(document.querySelectorAll(".tab"));
+    const tabs = Array.from(document.getElementsByClassName("tab"));
     const targetTab = document.getElementById(tabName + "-tab");
     const activeTab = tabs.find(tab => tab.classList.contains("active"));
 
@@ -23,7 +23,7 @@ function swapTab(tabName) {
             targetTab.style.opacity = "0";
             targetTab.style.transform = `translateX(${slideInX}px)`;
 
-            void targetTab.offsetHeight;
+            //void targetTab.offsetHeight;
 
             targetTab.classList.add("active");
             targetTab.style.opacity = "1";
@@ -34,10 +34,23 @@ function swapTab(tabName) {
         targetTab.style.opacity = "0";
         targetTab.style.transform = `translateX(${slideInX}px)`;
 
-        void targetTab.offsetHeight;
+        //void targetTab.offsetHeight;
 
         targetTab.classList.add("active");
         targetTab.style.opacity = "1";
         targetTab.style.transform = "translateX(0)";
     }
 }
+
+const images = ['Images/Me/1.jpg', 'Images/Me/2.jpg', 'Images/Me/3.jpg']
+let index = 0;
+
+document.getElementById('carousel-next').addEventListener('click', () => {
+    index = (index + 1) % images.length;
+    document.getElementById('image-carousel').src = images[index];
+});
+
+document.getElementById('carousel-prev').addEventListener('click', () => {
+    index = (index - 1 + images.length) % images.length;
+    document.getElementById('image-carousel').src = images[index];
+});

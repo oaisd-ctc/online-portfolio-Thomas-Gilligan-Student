@@ -54,9 +54,8 @@ h3 {
 }
 
 #certifications-container, #experience-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 0;
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
 }
 
@@ -86,28 +85,61 @@ ul {
     transition-duration: 300ms;
 }
 
-.item-card div {
+.item-card article {
     margin: auto;
 }
 
 p {
     margin: 5px;
-    text-overflow: ellipsis;
     text-wrap: wrap;
 }
 
-section {
-    border: 2px solid lightgray;
+h4 {
+    margin: 5px;
 }
 
 #about-card {
     display: grid;
-    /* grid-template-columns: 3fr, 2fr 1fr; */
     grid-template-rows: auto auto;
     justify-content: center;
-    width: 100%;
     margin: 16px;
     padding: 16px;
+    line-height: 1.4;
+}
+
+#about-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    justify-self: center;
+}
+
+#about-container > * {
+    flex: 50%;
+    justify-content: center;
+}
+
+#carousel-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#carousel-container img {
+    width: 300px;
+    height: 400px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+#carousel-container button {
+    margin: 8px;
+    font-size: 1.6em;
+}
+
+#about-card div > div > div {
+    display: flex;
+    justify-content: center;
 }
 
 h2 {
